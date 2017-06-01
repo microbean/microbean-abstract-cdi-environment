@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.microbean</groupId>
+  <artifactId>microbean-abstract-environment</artifactId>
+  <version>0.1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <parent>
+    <groupId>org.microbean</groupId>
+    <artifactId>microbean-pluginmanagement-pom</artifactId>
+    <version>3</version>
+  </parent>
+
+  <name>MicroBean Abstract Environment</name>
+  <description>${project.name}</description>
+  <inceptionYear>2017</inceptionYear>
+  <url>https://microbean.github.io/${project.artifactId}</url>
+
+  <scm>
+    <connection>scm:git:git@github.com:microbean/${project.artifactId}.git</connection>
+    <developerConnection>scm:git:git@github.com:microbean/${project.artifactId}.git</developerConnection>
+    <url>https://github.com/microbean/${project.artifactId}/</url>
+  </scm>
+
+  <dependencyManagement>
+    <dependencies>
+
+      <dependency>
+        <groupId>${project.groupId}</groupId>
+        <artifactId>${project.artifactId}</artifactId>
+        <version>${project.version}</version>
+        <type>pom</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-validator-cdi</artifactId>
+        <version>5.4.1.Final</version>
+        <type>jar</type>
+      </dependency>
+
+      <dependency>
+        <groupId>org.microbean</groupId>
+        <artifactId>microbean-configuration</artifactId>
+        <version>0.1.1</version>
+        <type>jar</type>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.microbean</groupId>
+        <artifactId>microbean-configuration-cdi</artifactId>
+        <version>0.1.5</version>
+        <type>jar</type>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.microbean</groupId>
+        <artifactId>microbean-main</artifactId>
+        <version>6</version>
+        <type>jar</type>
+      </dependency>
+      
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-simple</artifactId>
+        <version>1.7.25</version>
+        <type>jar</type>
+      </dependency>
+      
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+
+    <!-- Runtime-scoped dependencies. -->
+
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-validator-cdi</artifactId>
+      <type>jar</type>
+      <scope>runtime</scope>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.microbean</groupId>
+      <artifactId>microbean-configuration</artifactId>
+      <type>jar</type>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.microbean</groupId>
+      <artifactId>microbean-configuration-cdi</artifactId>
+      <type>jar</type>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.microbean</groupId>
+      <artifactId>microbean-main</artifactId>
+      <type>jar</type>
+      <scope>runtime</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <type>jar</type>
+      <scope>runtime</scope>
+    </dependency>
+    
+  </dependencies>
+
+  <build>
+
+    <resources>
+
+      <resource>
+        <directory>src/main/resources</directory>
+      </resource>
+      
+      <resource>
+        <targetPath>META-INF</targetPath>
+        <directory />
+        <includes>
+          <include>LICENSE</include>
+        </includes>
+      </resource>
+
+    </resources>
+
+    <plugins>
+
+      <plugin>
+        <groupId>com.github.github</groupId>
+        <artifactId>site-maven-plugin</artifactId>
+      </plugin>
+      
+    </plugins>
+  </build>
+
+  <properties>
+
+    <!-- maven-release-plugin properties -->
+    <goals>deploy,site-deploy</goals>
+    
+  </properties>
+  
+</project>
