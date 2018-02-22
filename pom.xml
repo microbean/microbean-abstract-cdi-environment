@@ -186,9 +186,9 @@
                   <run><![CDATA[adduser -g 'microbean' -h /microbean -s /sbin/nologin -D microbean && echo "microbean:microbean" | chpasswd && chown -R microbean:microbean /microbean]]></run>
                 </runCmds>
                 <tags>
-                  <tag>${buildNumber}</tag>
                   <tag>latest</tag>
                 </tags>
+                <workdir>/microbean</workdir>
               </build>
             </image>
           </images>
