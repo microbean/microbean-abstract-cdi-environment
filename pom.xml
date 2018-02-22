@@ -163,7 +163,7 @@
         <configuration>
           <images>
             <image>
-              <name>microbean-base:%l</name>
+              <name>microbean/microbean-base:%l</name>
               <build>
                 <from>docker.io/anapsix/alpine-java:8u162b12_jdk</from>
                 <assembly>
