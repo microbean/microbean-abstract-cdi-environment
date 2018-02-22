@@ -179,6 +179,11 @@
                   <build.git.branch>${scmBranch}</build.git.branch>
                   <build.timestamp>${timestamp}</build.timestamp>
                 </labels>
+                <entryPoint>
+                  <exec>
+                    <arg>java</arg>
+                  </exec>
+                </entryPoint>
                 <env>
                   <CLASSPATH>/microbean/*</CLASSPATH>
                 </env>
