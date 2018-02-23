@@ -27,10 +27,9 @@ of the following:
   extension][hibernate-validator-cdi].  This requires an
   implementation of [JSR 341][jsr-341], which is enumerated above.
 * [Version 0.2.1 of microBean Configuration][microbean-configuration].
-* [Version 0.2.0 of microBean Configuration
+* [Version 0.2.1 of microBean Configuration
   CDI][microbean-configuration-cdi].
 * [Version 6 of microBean Main][microbean-main].
-* [Version 1.7.25 of `slf4j-jdk14`][slf4j-jdk14]
   
 Together these implement [version 0.1.0 of the microBean Base
 Specification][microbean-base-specification].
@@ -41,5 +40,4 @@ Specification][microbean-base-specification].
 [microbean-configuration]: https://microbean.github.io/microbean-configuration/
 [microbean-configuration-cdi]: https://microbean.github.io/microbean-configuration-cdi/
 [microbean-main]: https://ljnelson.github.io/microbean-main/
-[slf4j-jdk14]: https://www.slf4j.org/manual.html
 [microbean-base-specification]: https://microbean.github.io/microbean-base-specification/

@@ -63,7 +63,7 @@
       <dependency>
         <groupId>org.microbean</groupId>
         <artifactId>microbean-configuration-cdi</artifactId>
-        <version>0.2.0</version>
+        <version>0.2.1</version>
         <type>jar</type>
       </dependency>
       
@@ -74,13 +74,6 @@
         <type>jar</type>
       </dependency>
 
-      <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-jdk14</artifactId>
-        <version>1.7.25</version>
-        <type>jar</type>
-      </dependency>
-      
     </dependencies>
   </dependencyManagement>
 
@@ -125,13 +118,6 @@
       <scope>runtime</scope>
     </dependency>
 
-    <dependency>
-      <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-jdk14</artifactId>
-      <type>jar</type>
-      <scope>runtime</scope>
-    </dependency>
-    
   </dependencies>
 
   <build>
