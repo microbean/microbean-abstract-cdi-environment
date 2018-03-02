@@ -26,8 +26,8 @@ of the following:
 * [Version 6.0.7.Final of the Hibernate Validator CDI
   extension][hibernate-validator-cdi].  This requires an
   implementation of [JSR 341][jsr-341], which is enumerated above.
-* [Version 0.2.1 of microBean Configuration][microbean-configuration].
-* [Version 0.2.1 of microBean Configuration
+* [Version 0.3.0 of microBean Configuration][microbean-configuration].
+* [Version 0.3.0 of microBean Configuration
   CDI][microbean-configuration-cdi].
 * [Version 6 of microBean Main][microbean-main].
   
