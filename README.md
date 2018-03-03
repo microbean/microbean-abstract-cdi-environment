@@ -26,12 +26,12 @@ of the following:
 * [Version 6.0.7.Final of the Hibernate Validator CDI
   extension][hibernate-validator-cdi].  This requires an
   implementation of [JSR 341][jsr-341], which is enumerated above.
-* [Version 0.3.0 of microBean Configuration][microbean-configuration].
-* [Version 0.3.0 of microBean Configuration
+* [Version 0.3.1 of microBean Configuration][microbean-configuration].
+* [Version 0.3.1 of microBean Configuration
   CDI][microbean-configuration-cdi].
 * [Version 6 of microBean Main][microbean-main].
   
-Together these implement [version 0.1.0 of the microBean Base
+Together these implement [version 0.3.1 of the microBean Base
 Specification][microbean-base-specification].
   
 [uel-ri]: https://javaee.github.io/uel-ri/
