@@ -4,7 +4,7 @@
 
   <groupId>org.microbean</groupId>
   <artifactId>microbean-abstract-environment</artifactId>
-  <version>0.3.3-SNAPSHOT</version>
+  <version>0.4.0-SNAPSHOT</version>
   <packaging>pom</packaging>  
 
   <parent>
@@ -56,14 +56,14 @@
       <dependency>
         <groupId>org.microbean</groupId>
         <artifactId>microbean-configuration</artifactId>
-        <version>0.3.1</version>
+        <version>0.4.1</version>
         <type>jar</type>
       </dependency>
 
       <dependency>
         <groupId>org.microbean</groupId>
         <artifactId>microbean-configuration-api</artifactId>
-        <version>0.3.0</version>
+        <version>0.4.1</version>
         <type>jar</type>
       </dependency>
       
@@ -142,7 +142,7 @@
         <plugin>
           <groupId>io.fabric8</groupId>
           <artifactId>docker-maven-plugin</artifactId>
-          <version>0.24.0</version>
+          <version>0.25.2</version>
         </plugin>
 
         <plugin>
@@ -169,7 +169,7 @@
             <image>
               <name>microbean/microbean-base:%l</name>
               <build>
-                <from>docker.io/anapsix/alpine-java:8u162b12_jdk</from>
+                <from>docker.io/anapsix/alpine-java:8u172b11_jdk</from>
                 <assembly>
                   <targetDir>/microbean</targetDir>
                   <inline>
@@ -188,6 +188,9 @@
                 <entryPoint>
                   <exec>
                     <arg>java</arg>
+                    <arg>-XX:+UnlockExperimentalVMOptions</arg>
+                    <arg>-XX:+UseCGroupMemoryLimitForHeap</arg>
+                    <arg>-XX:+PrintCommandLineFlags</arg>
                   </exec>
                 </entryPoint>
                 <env>
