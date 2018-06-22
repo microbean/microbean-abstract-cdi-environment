@@ -1,8 +1,8 @@
-# microbean-abstract-environment
+# microBean Abstract Environment
 
-The `microbean-abstract-environment` consists primarily of a mildly
-opinionated `pom.xml` file that describes runtime dependencies that
-together make up part of a bare minimum microBean environment.
+The microBean Abstract Environment project consists primarily of a
+mildly opinionated `pom.xml` file that describes runtime dependencies
+that together make up part of a bare minimum microBean environment.
 
 A full microBean environment&mdash;even a minimal one&mdash;will also
 need a CDI 2.0 implementation.
@@ -26,12 +26,12 @@ of the following:
 * [Version 6.0.7.Final of the Hibernate Validator CDI
   extension][hibernate-validator-cdi].  This requires an
   implementation of [JSR 341][jsr-341], which is enumerated above.
-* [Version 0.4.1 of microBean Configuration][microbean-configuration].
-* [Version 0.3.1 of microBean Configuration
+* [Version 0.4.2 of microBean Configuration][microbean-configuration].
+* [Version 0.4.2 of microBean Configuration
   CDI][microbean-configuration-cdi].
 * [Version 6 of microBean Main][microbean-main].
   
-Together these implement [version 0.4.0 of the microBean Base
+Together these implement [version 0.4.2 of the microBean Base
 Specification][microbean-base-specification].
   
 [uel-ri]: https://javaee.github.io/uel-ri/
