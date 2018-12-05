@@ -9,7 +9,7 @@ need a CDI 2.0 implementation.
 
 The `pom.xml` file also produces a Docker image that collects those
 dependencies together in a root `/microbean` directory, together with
-an Alpine Linux variant of the Java development kit.
+an Alpine Linux variant of the OpenJDK Java development kit.
 
 Users of this project are either Java developers&mdash;who can include
 the `pom.xml` directly as a dependency&mdash;or developers of Docker
@@ -21,17 +21,17 @@ dependencies is needed to complete any environment).
 The `microbean-abstract-environment` environment consists of versions
 of the following:
 
-* [Version 3.0.1-b09 of the reference implementation][uel-ri] of [JSR
+* [Version 3.0.1-b10 of the reference implementation][uel-ri] of [JSR
   341][jsr-341], the Java Expression Language specification.
-* [Version 6.0.7.Final of the Hibernate Validator CDI
+* [Version 6.0.13.Final of the Hibernate Validator CDI
   extension][hibernate-validator-cdi].  This requires an
   implementation of [JSR 341][jsr-341], which is enumerated above.
-* [Version 0.4.2 of microBean Configuration][microbean-configuration].
-* [Version 0.4.2 of microBean Configuration
+* [Version 0.4.3 of microBean Configuration][microbean-configuration].
+* [Version 0.4.3 of microBean Configuration
   CDI][microbean-configuration-cdi].
 * [Version 6 of microBean Main][microbean-main].
   
-Together these implement [version 0.4.2 of the microBean Base
+Together these implement [version 0.4.3 of the microBean Base
 Specification][microbean-base-specification].
   
 [uel-ri]: https://javaee.github.io/uel-ri/
