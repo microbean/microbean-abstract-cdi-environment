@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.microbean</groupId>
@@ -50,20 +53,20 @@
         <groupId>org.glassfish</groupId>
         <artifactId>javax.el</artifactId>
         <type>jar</type>
-        <version>3.0.1-b10</version>
+        <version>3.0.1-b11</version>
       </dependency>
       
       <dependency>
         <groupId>org.hibernate.validator</groupId>
         <artifactId>hibernate-validator-cdi</artifactId>
-        <version>6.0.13.Final</version>
+        <version>6.0.16.Final</version>
         <type>jar</type>
       </dependency>
 
       <dependency>
         <groupId>org.jboss.logging</groupId>
         <artifactId>jboss-logging</artifactId>
-        <version>3.3.2.Final</version>
+        <version>3.4.0.Final</version>
       </dependency>
       
       <dependency>
@@ -97,7 +100,7 @@
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
-        <version>1.8.0-beta2</version>
+        <version>1.8.0-beta4</version>
         <type>jar</type>
       </dependency>
 

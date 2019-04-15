@@ -21,9 +21,9 @@ dependencies is needed to complete any environment).
 The `microbean-abstract-environment` environment consists of versions
 of the following:
 
-* [Version 3.0.1-b10 of the reference implementation][uel-ri] of [JSR
+* [Version 3.0.1-b11 of the reference implementation][uel-ri] of [JSR
   341][jsr-341], the Java Expression Language specification.
-* [Version 6.0.13.Final of the Hibernate Validator CDI
+* [Version 6.0.16.Final of the Hibernate Validator CDI
   extension][hibernate-validator-cdi].  This requires an
   implementation of [JSR 341][jsr-341], which is enumerated above.
 * [Version 0.4.4 of microBean Configuration][microbean-configuration].
@@ -31,7 +31,7 @@ of the following:
   CDI][microbean-configuration-cdi].
 * [Version 7 of microBean Main][microbean-main].
   
-Together these implement [version 0.4.4 of the microBean Base
+Together these implement [version 0.4.7 of the microBean Base
 Specification][microbean-base-specification].
   
 [uel-ri]: https://javaee.github.io/uel-ri/
