@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>org.microbean</groupId>
@@ -10,15 +13,20 @@
   <parent>
     <groupId>org.microbean</groupId>
     <artifactId>microbean-pluginmanagement-pom</artifactId>
-    <version>10</version>
-    <relativePath />
+    <version>11</version>
+    <relativePath/>
   </parent>
 
-  <name>microBean Abstract Environment</name>
+  <name>microBean™ Abstract Environment</name>
   <description>${project.name}</description>
   <inceptionYear>2017</inceptionYear>
   <url>https://microbean.github.io/${project.artifactId}</url>
 
+  <organization>
+    <name>microBean™</name>
+    <url>http://microbean.systems/</url>
+  </organization>
+  
   <scm>
     <connection>scm:git:git@github.com:microbean/${project.artifactId}.git</connection>
     <developerConnection>scm:git:git@github.com:microbean/${project.artifactId}.git</developerConnection>
@@ -162,7 +170,7 @@
         <plugin>
           <groupId>io.fabric8</groupId>
           <artifactId>docker-maven-plugin</artifactId>
-          <version>0.29.0</version>
+          <version>0.30.0</version>
         </plugin>
 
         <plugin>
