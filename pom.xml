@@ -4,7 +4,7 @@
 
   <groupId>org.microbean</groupId>
   <artifactId>microbean-abstract-environment</artifactId>
-  <version>0.5.6-SNAPSHOT</version>
+  <version>0.6.0-SNAPSHOT</version>
   <packaging>pom</packaging>  
 
   <parent>
@@ -16,8 +16,8 @@
 
   <name>microBean™ Abstract Environment</name>
   <description>${project.name}</description>
-  <inceptionYear>2017</inceptionYear>
   <url>https://microbean.github.io/${project.artifactId}</url>
+  <inceptionYear>2017</inceptionYear>
 
   <organization>
     <name>microBean™</name>
@@ -53,28 +53,28 @@
 
       <dependency>
         <groupId>org.glassfish</groupId>
-        <artifactId>javax.el</artifactId>
+        <artifactId>jakarta.el</artifactId>
         <type>jar</type>
-        <version>3.0.1-b11</version>
+        <version>3.0.3</version>
       </dependency>
       
       <dependency>
         <groupId>org.hibernate.validator</groupId>
         <artifactId>hibernate-validator-cdi</artifactId>
-        <version>6.0.16.Final</version>
+        <version>6.0.17.Final</version>
         <type>jar</type>
       </dependency>
 
       <dependency>
         <groupId>org.jboss.logging</groupId>
         <artifactId>jboss-logging</artifactId>
-        <version>3.4.0.Final</version>
+        <version>3.4.1.Final</version>
       </dependency>
       
       <dependency>
         <groupId>org.microbean</groupId>
         <artifactId>microbean-configuration</artifactId>
-        <version>0.4.4</version>
+        <version>0.5.0</version>
         <type>jar</type>
       </dependency>
 
@@ -95,7 +95,7 @@
       <dependency>
         <groupId>org.microbean</groupId>
         <artifactId>microbean-main</artifactId>
-        <version>7</version>
+        <version>8</version>
         <type>jar</type>
       </dependency>
 
@@ -117,7 +117,7 @@
 
     <dependency>
       <groupId>org.glassfish</groupId>
-      <artifactId>javax.el</artifactId>
+      <artifactId>jakarta.el</artifactId>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
@@ -167,7 +167,7 @@
         <plugin>
           <groupId>io.fabric8</groupId>
           <artifactId>docker-maven-plugin</artifactId>
-          <version>0.30.0</version>
+          <version>0.31.0</version>
         </plugin>
 
         <plugin>
