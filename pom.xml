@@ -4,13 +4,13 @@
 
   <groupId>org.microbean</groupId>
   <artifactId>microbean-abstract-environment</artifactId>
-  <version>0.6.1-SNAPSHOT</version>
-  <packaging>pom</packaging>  
+  <version>0.7.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
 
   <parent>
     <groupId>org.microbean</groupId>
     <artifactId>microbean-pluginmanagement-pom</artifactId>
-    <version>11</version>
+    <version>17</version>
     <relativePath />
   </parent>
 
@@ -23,7 +23,7 @@
     <name>microBean™</name>
     <url>http://microbean.systems/</url>
   </organization>
-  
+
   <scm>
     <connection>scm:git:git@github.com:microbean/${project.artifactId}.git</connection>
     <developerConnection>scm:git:git@github.com:microbean/${project.artifactId}.git</developerConnection>
@@ -34,10 +34,6 @@
   <dependencyManagement>
     <dependencies>
 
-      
-      <!-- Normal dependencies. -->
-      
-      
       <dependency>
         <groupId>${project.groupId}</groupId>
         <artifactId>${project.artifactId}</artifactId>
@@ -48,7 +44,7 @@
       <dependency>
         <groupId>com.fasterxml</groupId>
         <artifactId>classmate</artifactId>
-        <version>1.5.0</version>
+        <version>1.5.1</version>
       </dependency>
 
       <dependency>
@@ -57,11 +53,11 @@
         <type>jar</type>
         <version>3.0.3</version>
       </dependency>
-      
+
       <dependency>
         <groupId>org.hibernate.validator</groupId>
         <artifactId>hibernate-validator-cdi</artifactId>
-        <version>6.0.17.Final</version>
+        <version>6.1.2.Final</version>
         <type>jar</type>
       </dependency>
 
@@ -70,39 +66,25 @@
         <artifactId>jboss-logging</artifactId>
         <version>3.4.1.Final</version>
       </dependency>
-      
-      <dependency>
-        <groupId>org.microbean</groupId>
-        <artifactId>microbean-configuration</artifactId>
-        <version>0.5.0</version>
-        <type>jar</type>
-      </dependency>
 
       <dependency>
         <groupId>org.microbean</groupId>
-        <artifactId>microbean-configuration-api</artifactId>
-        <version>0.4.4</version>
-        <type>jar</type>
-      </dependency>
-      
-      <dependency>
-        <groupId>org.microbean</groupId>
-        <artifactId>microbean-configuration-cdi</artifactId>
-        <version>0.4.5</version>
+        <artifactId>microbean-development-annotations</artifactId>
+        <version>0.2.4</version>
         <type>jar</type>
       </dependency>
       
       <dependency>
         <groupId>org.microbean</groupId>
         <artifactId>microbean-main</artifactId>
-        <version>8</version>
+        <version>9</version>
         <type>jar</type>
       </dependency>
 
       <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-api</artifactId>
-        <version>1.8.0-beta4</version>
+        <groupId>org.microbean</groupId>
+        <artifactId>microbean-settings</artifactId>
+        <version>0.0.3</version>
         <type>jar</type>
       </dependency>
 
@@ -113,7 +95,7 @@
 
 
     <!-- Runtime-scoped dependencies. -->
-    
+
 
     <dependency>
       <groupId>org.glassfish</groupId>
@@ -121,31 +103,10 @@
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
-    
+
     <dependency>
       <groupId>org.hibernate.validator</groupId>
       <artifactId>hibernate-validator-cdi</artifactId>
-      <type>jar</type>
-      <scope>runtime</scope>
-    </dependency>
-    
-    <dependency>
-      <groupId>org.microbean</groupId>
-      <artifactId>microbean-configuration</artifactId>
-      <type>jar</type>
-      <scope>runtime</scope>
-    </dependency>
-
-    <dependency>
-      <groupId>org.microbean</groupId>
-      <artifactId>microbean-configuration-api</artifactId>
-      <type>jar</type>
-      <scope>runtime</scope>
-    </dependency>
-    
-    <dependency>
-      <groupId>org.microbean</groupId>
-      <artifactId>microbean-configuration-cdi</artifactId>
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
@@ -156,6 +117,14 @@
       <type>jar</type>
       <scope>runtime</scope>
     </dependency>
+
+    <dependency>
+      <groupId>org.microbean</groupId>
+      <artifactId>microbean-settings</artifactId>
+      <type>jar</type>
+      <scope>runtime</scope>
+    </dependency>
+
 
   </dependencies>
 
@@ -175,10 +144,10 @@
           <artifactId>buildnumber-maven-plugin</artifactId>
           <version>1.4</version>
         </plugin>
-        
+
       </plugins>
     </pluginManagement>
-    
+
     <plugins>
 
       <plugin>
@@ -194,7 +163,7 @@
             <image>
               <name>microbean/microbean-base:%l</name>
               <build>
-                <from>docker.io/azul/zulu-openjdk-alpine:8</from>
+                <from>docker.io/adoptopenjdk/openjdk8:alpine-slim</from>
                 <assembly>
                   <targetDir>/microbean</targetDir>
                   <inline>
@@ -249,7 +218,7 @@
           </execution>
         </executions>
       </plugin>
-      
+
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>buildnumber-maven-plugin</artifactId>
@@ -263,7 +232,7 @@
           </execution>
         </executions>
       </plugin>
-      
+
     </plugins>
   </build>
 

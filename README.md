@@ -23,15 +23,13 @@ of the following:
 
 * [Version 3.0.3 of the Reference Implementation of the Jakarta
   Expression Language](https://eclipse-ee4j.github.io/el-ri/)
-* [Version 6.0.17.Final of the Hibernate Validator CDI
-  extension](https://docs.jboss.org/hibernate/validator/6.0/reference/en-US/html_single/#section-getting-started-cdi)
-* [Version 0.5.0 of microBean™
-  Configuration](https://microbean.github.io/microbean-configuration/)
-* [Version 0.5.0 of microBean™ Configuration
-  CDI](https://microbean.github.io/microbean-configuration-cdi/)
-* [Version 8 of microBean™
-  Main](https://ljnelson.github.io/microbean-main/)
+* [Version 6.1.2.Final of the Hibernate Validator CDI
+  extension](https://docs.jboss.org/hibernate/validator/6.1/reference/en-US/html_single/#section-getting-started-cdi)
+* [Version 9 of microBean™
+  Main](https://microbean.github.io/microbean-main/)
+* [Version 0.0.3 of microBean™
+  Settings](https://microbean.github.io/microbean-settings/)
 
-Together these implement parts of [version 0.5.0 of the microBean™
+Together these implement parts of [version 0.6.0 of the microBean™
 Base
 Specification](https://microbean.github.io/microbean-base-specification/).
