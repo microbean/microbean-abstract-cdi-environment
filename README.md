@@ -27,7 +27,7 @@ of the following:
   extension](https://docs.jboss.org/hibernate/validator/6.1/reference/en-US/html_single/#section-getting-started-cdi)
 * [Version 9 of microBean™
   Main](https://microbean.github.io/microbean-main/)
-* [Version 0.0.3 of microBean™
+* [Version 0.0.4 of microBean™
   Settings](https://microbean.github.io/microbean-settings/)
 
 Together these implement parts of [version 0.6.0 of the microBean™
